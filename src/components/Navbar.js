@@ -6,11 +6,10 @@ import "../styles/Navbar.css";
 const Navbar = (props) => (
   <nav className="navbar">
       <ul>
-          <li><a href="/">Clicky Game</a></li>
-          <li>{props.message}</li>
+          <li><a href="/">Reset</a></li>
           <li>Score: {props.score} | Top Score: {props.topscore}</li>
       </ul>
   </nav>
-);
+);	
 
 export default Navbar;

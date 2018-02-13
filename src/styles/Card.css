@@ -45,3 +45,16 @@
 .card > .remove:hover {
     color: #d50000;
 }
+
+.card img {
+    width: inherit;
+    height: inherit;
+
+    transition: 0.3s;
+    -o-transition: 0.3s;
+    -moz-transition: 0.3s;
+}
+
+.card img:hover {
+    box-shadow: 0 0 80px 10px rgba(0, 0, 225, 0.3);
+}

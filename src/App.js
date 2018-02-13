@@ -3,6 +3,16 @@ import Wrapper from "./components/Wrapper";
 import Card from "./components/Card";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
+import chun_li from "./styles/images/chun_li.png"
+import geese_howard from "./styles/images/geese_howard.png"
+import heihachi from "./styles/images/heihachi.png"
+import king_tekken from "./styles/images/king_tekken.png"
+import kingkof from "./styles/images/kingkof.png"
+import mbison from "./styles/images/mbison.png"
+import morrigan from "./styles/images/morrigan.png"
+import ryu from "./styles/images/ryu.png"
+import servBot from "./styles/images/servBot.png"
+
 
 class App extends Component {
   // Setting this.state.friends to the friends json array
@@ -10,63 +20,48 @@ class App extends Component {
       cardArray:[
           {
               id: 1,
-              img: "/styles/images/amazon.png",
+              img: chun_li,
               clicked: 0
 
           },
           {
               id: 2,
-              img: "/styles/images/apple.png",
+              img: geese_howard,
               clicked: 0
           },
           {
               id: 3,
-              img: "/styles/images/facebook.png')",
+              img: heihachi,
               clicked: 0
           },
           {
               id: 4,
-              img: "/styles/images/google.png')",
+              img: king_tekken,
               clicked: 0
           },
           {
               id: 5,
-              img: "/styles/images/instagram.png')",
+              img: kingkof,
               clicked: 0
           },
           {
               id: 6,
-              img: "/styles/images/jetbrains.png')",
+              img: mbison,
               clicked: 0
           },
           {
               id: 7,
-              img: "/styles/images/microsoft.png')",
+              img: morrigan,
               clicked: 0
           },
           {
               id: 8,
-              img: "/styles/images/netflix.png')",
+              img: ryu,
               clicked: 0
           },
           {
               id: 9,
-              img: "/styles/images/snapchat.png')",
-              clicked: 0
-          },
-          {
-              id: 10,
-              img: "/styles/images/tesla.png')",
-              clicked: 0
-          },
-          {
-              id: 11,
-              img: "/styles/images/twitter.png')",
-              clicked: 0
-          },
-          {
-              id: 12,
-              img: "/styles/images/uber.png')",
+              img: servBot,
               clicked: 0
           }
       ],
@@ -115,8 +110,8 @@ class App extends Component {
   render() {
     return (
         <div>
-            <Navbar score={this.state.score} topscore={this.state.topScore} message={this.state.message} />
-            <Header/>
+            <Navbar score={this.state.score} topscore={this.state.topScore}  />
+            <Header message={this.state.message}/>
           <Wrapper>
             {this.state.cardArray.map(friend => (
               <Card
